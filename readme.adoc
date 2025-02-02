@@ -1,8 +1,13 @@
 = pw-unreal (WIP)
 
-pw-unreal is an attempt to implent PipeWire into Unreal Engine.
+pw-unreal is an attempt to interface Unreal Engine and PipeWire.
 
-== Temporary summary
+== Summaries
+
+=== Goals
+
+1. Capturing and processing audio data through Blueprint-spawned PipeWire nodes at runtime
+2. Visualizing this audio data with cool Unreal Engine capabilites
 
 === Working
 
@@ -17,3 +22,8 @@ In `Source/unrealpw/Private/unrealpw.cpp`
 
 * Implementing "Tutorial 3: Forcing a Roundtrip" from the official Pipewire API docs +
 In `Source/unrealpw/Roundtrip.cpp`
+
+=== Challenges
+
+* Integrating and using the `pw_thread_loop` structure since we're implementing in Unreal Engine's +
+game loop system
