@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "PipeWire Interface",
+	"Description": "An interface between PipeWire and Unreal Engine",
+	"Category": "Other",
+	"CreatedBy": "Yasja S. de Miranda",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "unrealpw",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

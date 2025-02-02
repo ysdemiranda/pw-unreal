@@ -1,0 +1,18 @@
+= pw-unreal (WIP)
+pw-unreal is an attempt to implent PipeWire into Unreal Engine.
+
+== Temporary summary
+
+=== Working
+
+* Including and compiling libpipewire-0.3 headers in plugin's source +
+In `Source/unrealpw/unrealpw.Build.cs`
+
+* Linking against libpipewire-0.3 shared objects +
+In `Source/unrealpw/unrealpw.Build.cs`
+
+* Initializing libpipewire using `pw_init(...)` +
+In `Source/unrealpw/Private/unrealpw.cpp`
+
+* Implementing "Tutorial 3: Forcing a Roundtrip" from the official Pipewire API docs +
+In `Source/unrealpw/Roundtrip.cpp`
