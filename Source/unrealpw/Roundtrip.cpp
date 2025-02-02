@@ -34,7 +34,7 @@ void URoundtrip::registry_event_global(void *data, uint32_t id,
     uint32_t permissions, const char *type, uint32_t version,
     const struct spa_dict *props)
 {
-    UE_LOG(LogPipeWire, Display, TEXT("pw_object id:%u\ttype:%hs\tversion:%d\t"), id, type, version);
+    UE_LOG(LogPipeWire, Display, TEXT("pw_object id:%u;type:%hs;version:%d"), id, type, version);
 }
 
 void URoundtrip::Run()

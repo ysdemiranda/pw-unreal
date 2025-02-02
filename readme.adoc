@@ -4,12 +4,18 @@ pw-unreal is an attempt to interface Unreal Engine and PipeWire.
 
 == Summaries
 
+=== Development setup
+* Unreal Engine 5.5.0 Binary Installation
+* Arch linux with libpipewire-0.3 installed
+* Git repository resides in `${UE_PROJECT}/Plugins/pw-unreal`
+
 === Goals
 
 1. Capturing and processing audio data through Blueprint-spawned PipeWire nodes at runtime
 2. Visualizing this audio data with cool Unreal Engine capabilites
+3. Show everyone what a m'goodboy I am
 
-=== Working
+=== Achieved
 
 * Including and compiling libpipewire-0.3 headers in plugin's source +
 In `Source/unrealpw/unrealpw.Build.cs`
@@ -20,10 +26,10 @@ In `Source/unrealpw/unrealpw.Build.cs`
 * Initializing libpipewire using `pw_init(...)` +
 In `Source/unrealpw/Private/unrealpw.cpp`
 
-* Implementing "Tutorial 3: Forcing a Roundtrip" from the official Pipewire API docs +
+* Implementing and running "Tutorial 3: Forcing a Roundtrip" from the official Pipewire API docs +
 In `Source/unrealpw/Roundtrip.cpp`
 
 === Challenges
 
-* Integrating and using the `pw_thread_loop` structure since we're implementing in Unreal Engine's +
-game loop system
+* Implementing and running the `audio-capture.c` example from the offcial docs with `pw_thread_loop`
+* Choosing between `pw_thread_loop` or Unreal Engine's threading system in combination with `pw_loop`

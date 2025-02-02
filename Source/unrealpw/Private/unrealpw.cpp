@@ -18,7 +18,7 @@ void FunrealpwModule::StartupModule()
 	"You are trying to load the PipeWire interface" \
 	" plugin on a non-linux system, weirdo :/"));
 
-	UE_LOG(LogPipeWire, Warning, TEXT("Skipped initializing libpipewire, this is not a linux OS!"));
+	UE_LOG(LogPipeWire, Warning, TEXT("Skipping initializing libpipewire, this is not a linux OS!"));
 
 	return;
 #endif
